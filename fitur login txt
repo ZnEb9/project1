@@ -1,1 +1,23 @@
-usermane and pasword
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+  string username;
+  string password;
+
+  cout << "Enter your username: ";
+  cin >> username;
+
+  cout << "Enter your password: ";
+  cin >> password;
+
+  if (username == "admin" && password == "123456") {
+    cout << "Login successful!" << endl;
+  } else {
+    cout << "Invalid username or password. Try again." << endl;
+  }
+
+  return 0;
+}
